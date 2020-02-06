@@ -25,4 +25,4 @@ model = BERT_QA_MODEL.from_pretrained(pretrained_weights,
 input_ids = torch.tensor([tokenizer.encode("Let's see all hidden-states and attentions on this text")])
 
 all_hiddden_states, all_attentions = model(input_ids)[-2:]
-print(all_hiddden_states)
+print(type(all_hiddden_states))
